@@ -1,0 +1,104 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: neue-haas-grotesk-display;
+    font-display: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    font-size: 16px;
+    color: black;
+    background-color: transparent;
+    cursor: auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    user-select: none;
+}
+
+
+.main {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    width: 200px;
+    height: auto;
+    align-items: center;
+    border: 1px solid black;
+    margin: 16px;
+    padding: 8px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.1);
+    background-color: yellow;
+}
+
+#super:hover {
+    background: linear-gradient(to bottom, coral, yellow);
+    transform: scale(1.1);
+}
+
+#poison:hover {
+    background: linear-gradient(to bottom, peru, yellow);
+    transform: scale(1.1);
+}
+
+#oneup:hover {
+    background: linear-gradient(to bottom, lightgreen, yellow);
+    transform: scale(1.1);
+}
+
+#mini:hover {
+    background: linear-gradient(to bottom, aqua, yellow);
+    transform: scale(1.1);
+}
+
+#spring:hover {
+    background: linear-gradient(to bottom, silver, yellow);
+    transform: scale(1.1);
+}
+
+#boo:hover {
+    background: linear-gradient(to bottom, purple, yellow);
+    transform: scale(1.1);
+}
+
+#star:hover {
+    animation: rainbow 0.5s linear infinite;
+    transform: scale(1.1);
+    color: white;
+}
+
+@keyframes rainbow {
+    0% { background-color: red; }
+    16% { background-color: orange; }
+    33% { background-color: yellow; }
+    50% { background-color: green; }
+    66% { background-color: blue; }
+    83% { background-color: indigo; }
+    100% { background-color: violet; }
+}
+
+body ::selection {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
