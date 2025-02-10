@@ -35,6 +35,8 @@ img {
     width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .container {
@@ -101,4 +103,16 @@ img {
 body ::selection {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
+}
+
+@media (max-width: 999px) {
+    .container p {
+        display: none;
+    }
+}
+
+@media (max-width: 749px) {
+    .container img {
+        display: none;
+    }
 }
